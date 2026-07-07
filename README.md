@@ -45,7 +45,6 @@ Tools Used:
 
 ## CI/CD Status
 
-![CI](https://github.com/devops-intern/devops-intern-final/actions/workflows/ci.yml/badge.svg)
-
+![CI](https://github.com/Trusha-Manwar/devOps-intern/actions/workflows/ci.yml/badge.svg)
 
 ### Run Python Application

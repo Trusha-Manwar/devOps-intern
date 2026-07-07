@@ -1,18 +1,48 @@
-Grafana Loki Setup
+# Grafana Loki Setup
 
-Started Loki using Docker:
+## Starting Loki
+
+Loki was started locally using Docker.
+
+Command used:
 
 docker run -d \
 --name loki \
 -p 3100:3100 \
-grafana/loki
+grafana/loki:latest
 
 
-To check Loki logs:
+## Verify Loki Container
+
+Check running container:
+
+docker ps
+
+
+## View Loki Logs
+
+Command used:
 
 docker logs loki
 
 
-Loki URL:
+## Loki Endpoint
+
+Loki is available at:
 
 http://localhost:3100
+
+
+## Log Forwarding Setup
+
+Application and Docker container logs can be collected and forwarded to Loki using log agents such as Promtail.
+
+For this assessment, Loki was configured locally using Docker to demonstrate the monitoring setup.
+
+Docker container logs can be checked using:
+
+docker logs <container_name>
+
+Example:
+
+docker logs devops-container

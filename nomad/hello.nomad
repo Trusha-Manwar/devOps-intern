@@ -15,9 +15,17 @@ job "hello-devops" {
       }
 
       resources {
-        cpu = 100
+        cpu    = 100
         memory = 128
+      }
+
+      restart {
+        attempts = 3
+        interval = "30m"
+        delay    = "15s"
+        mode     = "fail"
       }
     }
   }
 }
+
